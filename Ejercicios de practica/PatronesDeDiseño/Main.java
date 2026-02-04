@@ -1,3 +1,4 @@
+package PatronesDeDiseño;   // o el nombre exacto que pusiste (sensible a mayúsculas)
 
 public class Main {
     public static void main(String[] args) {
