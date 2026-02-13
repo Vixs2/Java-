@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h1>Formulario de registro</h1>
+    </p>
+    
+    <form method="get">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+        </p>
+
+        <p>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+        </p>
+
+        <p>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="sexo m" name="h" value="Hombre">
+            <label for="hombre">Hombre:</label>
+            
+            <input type="radio" id="sexo f" name="f" value="Mujer">
+            <label for="mujer">Mujer:</label>
+
+        </p>
+
+        <p>
+            <label for="correo">Correo:</label>
+            <input type="email" placeholder="Ingrese su correo" required>
+        </p>
+
+        <p>
+            <label for="poblacion">Poblacion:</label>
+            <select>
+                <option>Alicante</option>
+                <option>Madrid</option>
+                <option>Sevilla</option>
+                <option>Valencia</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="descripcion">Descripcion:</label>
+            <textarea name="descripcion" id="descripcion" rows="6" cols="60"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" name="info" id="info" checked>
+            <label for="info">Deseo recibir informacion sobre novedades y ofertas</label>
+        </p>
+
+        <p>
+            <input type="checkbox" name="info2" id="info2" checked>
+            <label for="info">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos</label>
+        </p>
+        
+        <p>
+            <input type="button" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
