@@ -16,7 +16,7 @@ public class BuilderDirector {
     public void construirCasaDosPisosMaterial(){
         builder.reiniciar();
         builder.construirEstructura("Ladrillo");
-        builder.construirPisos(3);
+        builder.construirPisos(2);
         builder.construirPiscina(false);
         builder.construirJardin(true);
         builder.construirGaraje(true);
@@ -29,7 +29,7 @@ public class BuilderDirector {
         builder.construirPisos(4);
         builder.construirPiscina(true);
         builder.construirJardin(false);
-        builder.construirJardin(false);
+        builder.construirGaraje(false);
         builder.agregarExtras("Parrilla cerca de la piscina");
     }
 

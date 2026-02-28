@@ -3,7 +3,7 @@ package Builder;
 //Builder general.
 public interface BuilderCasa {
 
-    //Se añaden los metodos de cada uno de los atrubutos del objeto.
+    //Se añaden los metodos de cada uno de los atributos del objeto.
 
     void reiniciar();
     void construirEstructura(String esctructura);

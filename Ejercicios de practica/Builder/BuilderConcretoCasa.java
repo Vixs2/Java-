@@ -11,7 +11,8 @@ public class BuilderConcretoCasa implements BuilderCasa {
 
     @Override
     public void reiniciar() {
-        this.extras = new ArrayList<>();
+        this.resultado = new Casa();
+        this.extras = new ArrayList<String>(); 
     }
 
     @Override
