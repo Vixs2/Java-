@@ -1,26 +1,33 @@
-class Solution {
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Solution {
+
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println();
+        JFrame ventana = new JFrame("Mi actividad");
+        ventana.setSize(300, 150);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setLayout(null);
 
-            for (int j = 1; j <= 5 - i; j++) {
-                System.out.print(" ");
-            }
+        JButton boton = new JButton("Presionar");
+        boton.setBounds(80, 20, 120, 30);
 
-            for (int j = 1; j <= 2 * i -1; j++) {
-                System.out.print("*");
-            }
-        }  
+        JLabel etiqueta = new JLabel("Esperando acción...");
+        etiqueta.setBounds(80, 60, 200, 30);
 
-        for (int i = 4; i >= 1; i--) {
-            System.out.println();
-            for (int j = 1; j <= 5-i ; j++) {
-                System.out.print(" ");
+        ventana.add(boton);
+        ventana.add(etiqueta);
+
+        boton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                etiqueta.setText("El botón ha sido presionado.");
             }
-            for (int j = 1; j <= 2 * i - 1; j++) {
-                System.out.print("*");
-            }
-        }
+        });
+
+        ventana.setVisible(true);
     }
 }
